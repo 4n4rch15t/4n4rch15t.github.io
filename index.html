@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4n4rc15t</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="profile.jpg">
+    <script src="https://kit.fontawesome.com/87f88512bf.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="overlay">
+        <div class="transperentOverlay">
+            <button id="lockSreen" onclick="slideUp()" class="screen">
+                <img src="profile.jpg" alt="" id="lockScreenImg">
+                <h1>4n4rc15t</h1>
+                <p>Click on the screen to unlock</p>
+            </button>
+            <div id="desktopScreen" class="screen">
+                <div id="dock">
+                    <div id="dockContent" class="showDock">
+                        <button id="menuButton" alt="Open Menu" onclick="menuButtonAnimation()">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </button>
+                        <button id="homeButton" onclick="closeAllWriteUps()"><i class="fa-solid fa-house"></i></button>
+                        <button id="resumeButton" onclick="openresume()"><i class="fa-solid fa-user"></i></button>
+                        <button id="lockScreenButton" onclick="slideDown()"><i class="fa-solid fa-lock" style="font-size: 30px; color:white;"></i></button>
+                        <button id="settingsButton" onclick="window.close()"><i class="fa-solid fa-power-off"></i></button>
+                    </div>
+                </div>
+                <div id="menu" class="screen noShowMenu">
+                    <div class="row">
+                        <div class="container">
+                            <button class="menuIcons" onclick="openWriteUp('hacklu')"><img src="logo/hacklu.png" style="height: 35px; width:35px;" alt=""><p>2022</p></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="writeups screen" id="resume">
+                    <div class="writeupHeader" id="writeupHeader">
+                        <button onclick="closeWriteUp('resume')"></button>
+                    </div>
+                    <iframe src="https://dhananjai2003.github.io/" frameborder="0"></iframe>
+                </div>
+                <div class="writeups screen" id="hacklu">
+                    <div class="writeupHeader" id="writeupHeader">
+                        <button onclick="closeWriteUp('hacklu')"></button>
+                    </div>
+                    <iframe src="write ups\hack.lu-ctf-2022\index.html" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

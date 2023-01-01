@@ -1,0 +1,266 @@
+body{
+    height: 100vh;
+    width: 100vh;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 60px;
+}
+
+.overlay{
+    height: 90vh;
+    width: 175vh;
+    background-color: rgb(56, 56, 56);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    border-radius: 35px; 
+    z-index: 60;
+    
+}
+
+.transperentOverlay{
+    height: 87vh;
+    width: 172vh;
+    background-color: aliceblue;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    border-radius: 30px; 
+    z-index: 100px;
+    z-index: 60;
+}
+
+#lockSreen{
+    background-image: url("Cafe wallpaper.jpg");
+    margin: 0px;
+    padding: 0px;
+    overflow:hidden;
+    z-index: 100;
+    text-align: center;
+  }
+
+#lockSreen > h1{
+    font-size: 65px;
+    font-weight: 500px;
+    color: white;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#lockSreen > p {
+    font-size: 20px;
+    font-weight: 300px;
+    color: white;
+    background-color: rgba(255, 255,255, 0.4);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+
+}
+
+#lockSreen > img {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    border: 20px solid rgba(red, green, blue, 0.6);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#homeButton{
+    color: white;
+    font-size: 30px;
+}
+
+.screen{
+    width:100%;
+    height:100%;
+    box-sizing: border-box;
+    position: fixed;
+    border-radius: 30px;
+    border: 0ch;
+}
+
+#desktopScreen{
+    box-sizing: border-box;
+    background-image: url("mainWallpaper.jpg");
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+#dock{
+    box-sizing: border-box;
+    height: 90px;
+    width: 100%;
+    z-index: 99;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+}
+
+#dock:hover > #dockContent{
+    display: flex;
+    transition-duration: 0.5s;
+}
+
+#dockContent{
+    background-color: rgba(255, 255,255, 0.4);
+    border-radius: 10px;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+
+#dockContent > button{
+    height: 50px ;
+    width:  50px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-size:contain;
+    background-repeat: no-repeat;
+    border: 0ch;
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: rgba(0, 0,0, 0.5);
+    color: white;
+}
+
+.showDock{
+    display: flex;
+    transition-delay: 0.5s;
+}
+
+.noShowDock{
+    display: none;
+    transition-delay: 0.5s;
+}
+
+#menuButton {
+    background-color: rgba(0, 0,0, 0.5);
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+    transition: 0.4s;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+} 
+
+#settingsButton{
+    font-size: 32px;
+}
+
+#lockScreenButton{
+    display: inline-block;
+    background-color: rgba(0, 0,0, 0.5);
+}
+
+#resumeButton{
+    font-size: 30px;
+}
+
+#menu{
+    box-sizing: border-box;
+    width: 100%;
+    z-index: 98;
+    height: 100%;
+    background-color: rgba(0, 0,0, 0.4);
+    bottom: 0px;
+    position: fixed;
+    transition-duration: 1s;
+    padding: 20px;
+}
+
+.noShowMenu{
+    display: none;
+    transition-duration: 1s;
+}
+
+.menuIcons{
+    height: 70px;
+    width: max-content;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 0ch;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.menuIcons > img {
+    box-sizing: border-box;
+    height: inherit;
+    width:60px;
+    height: 40px;
+}
+
+.menuIcons > p{
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    margin:0px;
+}
+
+.menudiv{
+    width: max-content;
+}
+
+.writeups{
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: none;
+    flex-direction: column;
+}
+
+.writeupHeader{
+    width: 100%;
+    height: 5%;
+    padding: 10px;
+    background-color: rgb(64, 121, 220);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-sizing: border-box;
+}
+
+.writeupHeader > button{
+    height: 30px;
+    width:30px;
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    background-color: red;
+}
+
+.writeups > iframe{
+    width: 100%;
+    box-sizing: border-box;
+    flex: 1 1 auto;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
